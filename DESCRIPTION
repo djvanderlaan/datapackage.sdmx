@@ -1,0 +1,25 @@
+Package: datapackage.sdmx
+Type: Package
+Title: Data Reader for Parquet Files for the 'datapackage' Package
+Version: 0.1.1
+Authors@R: 
+    person(given = "Jan",
+           family = "van der Laan",
+           role = c("aut", "cre"),
+           email = "r@eoos.dds.nl",
+           comment = c(ORCID = "0000-0002-0693-1514"))
+Description: Adds a reader and writer for parquet files to the 'datapackage' R
+    package. Loading the package allows one to automatically read parquet files
+    in Data Resources. It is also possible to request an 'arrow' connection to
+    the data.
+Depends:
+    datapackage,
+    R (>= 4.2.0)
+Imports:
+    xml2
+Suggests:
+    simplermarkdown
+VignetteBuilder: simplermarkdown
+License: GPL-3
+Encoding: UTF-8
+RoxygenNote: 7.3.2

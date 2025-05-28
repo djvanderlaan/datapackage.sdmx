@@ -1,0 +1,6 @@
+
+inst/doc/
+man/
+work/
+*.swo
+*.swp
