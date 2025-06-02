@@ -3,6 +3,8 @@
 #' @param path path to the data set. 
 #' 
 #' @param resource a Data Resource.
+#' 
+#' @param ... Ignored.
 #'
 #' @seealso
 #' Generally used by calling \code{\link[datapackage]{dp_get_data}} from the
@@ -18,7 +20,7 @@
 #' Returns a \code{data.frame} with the data.
 #' 
 #' @export
-sdmx_codelist_reader <- function(path, resource) {
+sdmx_codelist_reader <- function(path, resource, ...) {
   if (length(path) > 1) 
     warning("Path has length > 1; only first element used.")
   res <- read_sdmx_codelist(path[1])

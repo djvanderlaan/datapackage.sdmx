@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mes:Structure xmlns:mes="http://www.sdmx.org/resources/sdmxml/schemas/v2_1/message" xmlns:str="http://www.sdmx.org/resources/sdmxml/schemas/v2_1/structure" xmlns:com="http://www.sdmx.org/resources/sdmxml/schemas/v2_1/common">
+  <mes:Structures>
+    <str:Codelists>
+      <str:Codelist id="EMPLOY" agencyID="DATAPACKAGESDMX" version="1.0">
+        <str:Code id="E">
+          <com:Name xml:lang="en">Employed</com:Name>
+          <com:Name xml:lang="nl">Werkend</com:Name>
+          <com:Description xml:lang="en">Employed</com:Description>
+          <com:Description xml:lang="nl">Werkend</com:Description>
+        </str:Code>
+        <str:Code id="U">
+          <com:Name xml:lang="en">Unemployed</com:Name>
+          <com:Name xml:lang="nl">Werkloos</com:Name>
+          <com:Description xml:lang="en">Unemployed</com:Description>
+          <com:Description xml:lang="nl">Werkloos</com:Description>
+        </str:Code>
+        <str:Code id="N">
+          <com:Name xml:lang="en">Non-working population</com:Name>
+          <com:Name xml:lang="nl">Niet-beroepsbevolking</com:Name>
+          <com:Description xml:lang="en">Does not belong to the working population</com:Description>
+          <com:Description xml:lang="nl">Behoort niet tot de beroepsbevolking</com:Description>
+        </str:Code>
+        <str:Code id="X">
+          <com:Name xml:lang="en">Unknown</com:Name>
+          <com:Name xml:lang="nl">Onbekend</com:Name>
+          <com:Description xml:lang="en">Unknown</com:Description>
+          <com:Description xml:lang="nl">Onbekend</com:Description>
+        </str:Code>
+      </str:Codelist>
+    </str:Codelists>
+  </mes:Structures>
+</mes:Structure>

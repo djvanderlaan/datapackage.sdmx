@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mes:Structure xmlns:mes="http://www.sdmx.org/resources/sdmxml/schemas/v2_1/message" xmlns:str="http://www.sdmx.org/resources/sdmxml/schemas/v2_1/structure" xmlns:com="http://www.sdmx.org/resources/sdmxml/schemas/v2_1/common">
+  <mes:Structures>
+    <str:Codelists>
+      <str:Codelist id="GENDER" agencyID="DATAPACKAGESDMX" version="1.0">
+        <str:Code id="F">
+          <com:Name xml:lang="en">Female</com:Name>
+          <com:Name xml:lang="nl">Vrouw</com:Name>
+        </str:Code>
+        <str:Code id="M">
+          <com:Name xml:lang="en">Male</com:Name>
+          <com:Name xml:lang="nl">Man</com:Name>
+        </str:Code>
+        <str:Code id="X">
+          <com:Name xml:lang="en">Other</com:Name>
+          <com:Name xml:lang="nl">Overig</com:Name>
+        </str:Code>
+        <str:Code id="U">
+          <com:Name xml:lang="en">Unknown</com:Name>
+          <com:Name xml:lang="nl">Onbekend</com:Name>
+        </str:Code>
+      </str:Codelist>
+    </str:Codelists>
+  </mes:Structures>
+</mes:Structure>

@@ -70,6 +70,7 @@ parse_code <- function(node) {
   names <- if (is.null(names)) descriptions else names
   names(names) <- c("Name", "lang")
   descriptions <- if (is.null(descriptions)) names else descriptions
+  names(descriptions) <- c("Description", "lang")
   if (is.null(names) && is.null(descriptions)) {
     res <- data.frame(name = id, description = id, lang = "")
   } else {
