@@ -5,19 +5,19 @@ build: document
 	mkdir -p work && cd work && R CMD build ../
 
 check: build
-	cd work && R CMD check --as-cran `ls datapackage.parquet*.tar.gz | sort | tail -n 1`
+	cd work && R CMD check --as-cran `ls datapackage.sdmx*.tar.gz | sort | tail -n 1`
 
 document:
 	R -e "roxygen2::roxygenise()"
 
 vignettes: build
-	cd work && tar -xzf `ls datapackage.parquet*.tar.gz | sort | tail -n 1` && \
+	cd work && tar -xzf `ls datapackage.sdmx*.tar.gz | sort | tail -n 1` && \
 	  rm -r -f ../inst/doc && \
 	  mkdir -p ../inst && \
-	  cp -r datapackage.parquet/inst/doc ../inst
+	  cp -r datapackage.sdmx/inst/doc ../inst
 
 install: build
-	R CMD INSTALL `ls work/datapackage.parquet*.tar.gz | sort | tail -n 1` 
+	R CMD INSTALL `ls work/datapackage.sdmx*.tar.gz | sort | tail -n 1` 
 
 
 readme:
