@@ -1,10 +1,19 @@
+library(datapackage)
 pkgload::load_all()
-library(codelist)
+
+dp <- open_datapackage("inst/employ")
+
+dp
+
+dta <- dp |> dp_get_data("employment")
+dta
+
+dp_categorieslist(dta$employ)
+
+dp_to_code(dta$employ)
+
+dp_to_factor(dta$employ)
 
 
-dta <- read_sdmx_codelist("work/ESTAT+CLS_NACE_REV2+1.0.xml")
-
-
-cl <- as.codelist(dta)
-
+dp |> dp_get_data("codelist-gender", standardise = FALSE)
 

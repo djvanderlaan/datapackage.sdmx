@@ -5,13 +5,13 @@
 #' @return
 #' Returns a \code{data.frame} with the code list with the following columns:
 #'
-#' \item{value}{A character column with the codes/values/id's.}
+#' \item{id}{A character column with the codes/values/id's.}
 #'
-#' \item{label}{A character column with the labels/names of the codes. }
+#' \item{name}{A character column with the labels/names of the codes. }
 #'
 #' \item{description}{The description of the code. } 
 #'
-#' \item{locale}{The language of the label and description.}
+#' \item{lang}{The language of the label and description.}
 #' 
 #' \item{parent}{The parent code of the code. This defines a hierarchical code
 #' list. Values can be missing. This either means that the code is a top-level
@@ -23,7 +23,7 @@ read_sdmx_codelist <- function(path) {
   res <- extract_codelist_from_sdmx(path)
   res <- fill_languages(res)
   res <- res[c("id", "name", "description", "lang", "parent")]
-  names(res) <- c("value", "label", "description", "locale", "parent")
+  #names(res) <- c("value", "label", "description", "locale", "parent")
   res
 }
 
